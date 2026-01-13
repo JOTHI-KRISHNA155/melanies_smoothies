@@ -13,6 +13,8 @@ st.write("The name on your smoothie will be:", name_on_order)
 
 # Snowflake connection (Cloud-safe)
 conn = st.connection("snowflake")
+session = conn.session()
+
 
 # Query fruit options (NO Snowpark)
 fruit_df = conn.query("""
