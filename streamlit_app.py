@@ -22,6 +22,7 @@ my_dataframe = (
     .select(col("FRUIT_NAME"), col("SEARCH_ON"))
 )
 
+
 # Create pandas version (REQUIRED for SEARCH_ON lookup)
 pd_df = my_dataframe.to_pandas()
 
